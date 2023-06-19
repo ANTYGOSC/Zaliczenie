@@ -27,4 +27,17 @@ def losowanie_liczb():
     except ValueError as e:
         print("Błąd:", e)
 
+def zapisz_parametry(nick, ilosc_losowan, maks_zakres, liczby_typowane, trafione_liczby):
+    try:
+        nazwa_pliku = nick + ".txt"
+        with open(nazwa_pliku, 'w') as plik:
+            plik.write("Nick: " + nick + "\n")
+            plik.write("Ilość losowań: " + str(ilosc_losowan) + "\n")
+            plik.write("Maksymalny zakres losowania: " + str(maks_zakres) + "\n")
+            plik.write("Typowane liczby: " + str(liczby_typowane) + "\n")
+            plik.write("Trafione liczby: " + str(trafione_liczby) + "\n")
+        print("Parametry gry zostały zapisane do pliku", nazwa_pliku)
+    except Exception as e:
+        print("Błąd podczas zapisu do pliku:", e)
 
+losowanie_liczb()

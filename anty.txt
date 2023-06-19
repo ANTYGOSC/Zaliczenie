@@ -1,0 +1,5 @@
+Nick: anty
+Iloœæ losowañ: 5
+Maksymalny zakres losowania: 20
+Typowane liczby: [7, 5, 3, 1, 2]
+Trafione liczby: [1, 5]

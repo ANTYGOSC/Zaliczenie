@@ -1,2 +1,2 @@
 # Zaliczenie
-Krystian, wwx14253, c12
+Krystian, 22807, c12
